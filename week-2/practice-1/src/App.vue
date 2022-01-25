@@ -1,21 +1,97 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+const myAcc = [
+	{
+		name: "salary",
+		amount: 10000,
+	},
+	{
+		name: "rent",
+		amount: -2500,
+	},
+	{
+		name: "parking fee",
+		amount: 0,
+	},
+	{
+		name: "car fuel",
+		amount: -600,
+	},
+	{
+		name: "commission",
+		amount: 5500,
+	},
+];
+const nameStyle = "text-align: left";
+const footerStyle = "font-weight: bold";
+const markStyle = {
+	green: "background-color: #96ffa6",
+	red: "background-color: #ff9696",
+};
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+	<h1>MY ACCOUNT</h1>
+	<table class="center">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Amount</th>
+			</tr>
+		</thead>
+		<tbody>
+			<template v-for="(value, index) in myAcc" :key="index">
+				<tr v-if="value.amount !== 0">
+					<td :style="nameStyle">{{ value.name }}</td>
+					<td>
+						<mark
+							:style="
+								value.amount > 0
+									? markStyle.green
+									: markStyle.red
+							"
+						>
+							{{ value.amount }}
+						</mark>
+					</td>
+				</tr>
+			</template>
+		</tbody>
+		<tfoot :style="footerStyle">
+			<tr>
+				<td>Net total</td>
+				<td>
+					{{
+						myAcc.reduce((total, value) => total + value.amount, 0)
+					}}
+				</td>
+			</tr>
+		</tfoot>
+	</table>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #000000;
+	margin-top: 60px;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+table,
+th,
+td {
+	border-collapse: collapse;
+	width: 40%;
+}
+th {
+	background-color: #f0f0f0;
+}
+thead {
+	border: 1px solid #dadada;
 }
 </style>
