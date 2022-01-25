@@ -1,3 +1,3 @@
 # Week 2
 
-- practice 1
+- [ ] practice 1
