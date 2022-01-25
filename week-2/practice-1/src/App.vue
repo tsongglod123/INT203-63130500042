@@ -1,5 +1,5 @@
 <script setup>
-const myAcc = [
+const acc = [
 	{
 		name: "salary",
 		amount: 10000,
@@ -23,7 +23,7 @@ const myAcc = [
 ];
 const nameStyle = "text-align: left";
 const footerStyle = "font-weight: bold";
-const markStyle = {
+const marks = {
 	green: "background-color: #96ffa6",
 	red: "background-color: #ff9696",
 };
@@ -39,16 +39,12 @@ const markStyle = {
 			</tr>
 		</thead>
 		<tbody>
-			<template v-for="(value, index) in myAcc" :key="index">
+			<template v-for="value in acc" :key="value.name">
 				<tr v-if="value.amount !== 0">
 					<td :style="nameStyle">{{ value.name }}</td>
 					<td>
 						<mark
-							:style="
-								value.amount > 0
-									? markStyle.green
-									: markStyle.red
-							"
+							:style="value.amount > 0 ? marks.green : marks.red"
 						>
 							{{ value.amount }}
 						</mark>
@@ -60,9 +56,7 @@ const markStyle = {
 			<tr>
 				<td>Net total</td>
 				<td>
-					{{
-						myAcc.reduce((total, value) => total + value.amount, 0)
-					}}
+					{{ acc.reduce((total, value) => total + value.amount, 0) }}
 				</td>
 			</tr>
 		</tfoot>
