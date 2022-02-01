@@ -1,6 +1,6 @@
 # Week 1
 
-- lab 1 
+- lecture & lab 1 
 
 # Vue 3 + Vite
 
