@@ -39,7 +39,7 @@ const marks = {
 			</tr>
 		</thead>
 		<tbody>
-			<template v-for="value in acc" :key="value.name">
+			<template v-for="value in acc">
 				<tr v-if="value.amount !== 0">
 					<td :style="nameStyle">{{ value.name }}</td>
 					<td>
