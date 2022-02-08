@@ -2,8 +2,8 @@
 import { ref, reactive, computed } from "vue";
 
 const notes = reactive([]);
-let noteText = ref("");
-let filteredText = ref("");
+const noteText = ref("");
+const filteredText = ref("");
 
 const addNote = () => {
 	if (noteText.value.length > 0) {
@@ -11,6 +11,7 @@ const addNote = () => {
 		noteText.value = "";
 	}
 };
+const clickMe = (text) => (noteText.value = text);
 const filterNote = computed(() => {
 	let text = filteredText.value.toLowerCase();
 	return notes.filter((note) => note.toLowerCase().indexOf(text) > -1);
@@ -18,7 +19,7 @@ const filterNote = computed(() => {
 </script>
 
 <template>
-	<div id="filter" v-if="notes.length > 0">
+	<div id="filter" v-show="notes.length > 0">
 		<label for="filtered-text">Filter note </label>
 		<input type="text" id="filtered-text" v-model="filteredText" />
 	</div>
@@ -26,6 +27,7 @@ const filterNote = computed(() => {
 		<ul>
 			<li v-for="(note, index) in filterNote" :key="index">
 				{{ note }}
+				<button type="button" @click="clickMe(note)">Click me</button>
 			</li>
 		</ul>
 	</div>
