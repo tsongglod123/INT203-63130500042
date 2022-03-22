@@ -1,0 +1,62 @@
+{
+  "notes": [
+    {
+      "detail": "preparing sleep",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "detail": "watch movies"
+    },
+    {
+      "id": 3,
+      "detail": "running"
+    },
+    {
+      "detail": "test",
+      "id": 4
+    },
+    {
+      "detail": "sssdsd",
+      "id": 6
+    },
+    {
+      "detail": "asd",
+      "id": 7
+    },
+    {
+      "detail": "sdsds",
+      "id": 8
+    },
+    {
+      "detail": "ddd",
+      "id": 10
+    },
+    {
+      "detail": "sdfd",
+      "id": 11
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "fetch-api",
+      "author": "umaporn"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
