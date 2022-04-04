@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "json-server",
+      "profile": {
+        "nickname": "fake-server",
+        "age": "5000",
+        "gender": "male"
+      }
+    },
+    {
+      "username": "lnwza007",
+      "profile": {
+        "nickname": "tong",
+        "age": "51",
+        "gender": "other"
+      },
+      "id": 2
+    },
+    {
+      "username": "tantan",
+      "profile": {
+        "nickname": "tan",
+        "age": "12",
+        "gender": "male"
+      },
+      "id": 3
+    },
+    {
+      "username": "hirun",
+      "profile": {
+        "nickname": "nod",
+        "age": "19",
+        "gender": "male"
+      },
+      "id": 4
+    },
+    {
+      "username": "bombenten",
+      "profile": {
+        "nickname": "bomb",
+        "age": "20",
+        "gender": "male"
+      },
+      "id": 5
+    }
+  ]
+}
