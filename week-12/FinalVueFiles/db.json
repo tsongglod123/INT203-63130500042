@@ -1,0 +1,19 @@
+{
+  "stories": [
+    {
+      "title": "Belling the Cat",
+      "story": "The Mice once called a meeting to decide on a plan to free themselves of their enemy, the Cat. At least they wished to find some way of knowing when she was coming, so they might have time to run away. Indeed, something had to be done, for they lived in such constant fear of her claws that they hardly dared stir from their dens by night or day...",
+      "id": 1
+    },
+    {
+      "title": "The Fox & the Grapes",
+      "story": "A Fox one day spied a beautiful bunch of ripe grapes hanging from a vine trained along the branches of a tree. The grapes seemed ready to burst with juice, and the Fox's mouth watered as he gazed longingly at them.\n\nThe bunch hung from a high branch, and the Fox had to jump for it. The first time he jumped he missed it by a long way. So he walked off a short distance and took a running leap at it, only to fall short once more. Again and again he tried, but in vain...",
+      "id": 2
+    },
+    {
+      "title": "Turtle and Rabbit",
+      "story": "Once upon a time a turtle and a rabbit had an argument about who was faster. They decided to settle the argument with a race. The rabbit was complacent and fell asleep, and the turtle won the race.",
+      "id": 3
+    }
+  ]
+}

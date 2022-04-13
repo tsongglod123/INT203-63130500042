@@ -1,0 +1,14 @@
+{
+  "stories": [
+    {
+      "title": "test",
+      "story": "test",
+      "id": 2
+    },
+    {
+      "title": "Noodle",
+      "story": "I'm editing a bowl of noodle",
+      "id": 3
+    }
+  ]
+}
