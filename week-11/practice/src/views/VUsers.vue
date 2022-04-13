@@ -19,7 +19,8 @@ const getProfile = async (url, id) => {
 	}
 };
 
-// PUT
+const goEdit = () =>
+	appRouter.push({ name: "edit-profile", params: { id: params.id } });
 
 const goHomepage = () => appRouter.push({ name: "home" });
 
@@ -33,6 +34,7 @@ onBeforeMount(async () => {
 		<h1>Welcome {{ profile.nickname }}</h1>
 		<VProfile :profile="profile" />
 		<br />
+		<button type="button" @click.left="goEdit">Edit</button>
 		<button type="button" @click.left="goHomepage">Logout</button>
 	</div>
 </template>

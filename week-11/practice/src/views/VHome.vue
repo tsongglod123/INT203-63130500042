@@ -45,7 +45,7 @@ const login = async (user_name) => {
 					@keyup.enter="login($event.target.value)"
 				/>
 			</div>
-			<VLogin :username="username" @action="login" />
+			<VLogin :username="username" @function="login" />
 		</div>
 		<br />
 		<div id="to-register">

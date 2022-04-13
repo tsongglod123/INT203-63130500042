@@ -81,7 +81,7 @@ const register = async (user) => {
 			</div>
 		</div>
 		<br />
-		<VRegister :username="username" :profile="profile" @action="register" />
+		<VRegister :username="username" :profile="profile" @function="register" />
 		<button type="button" @click.left="goHomepage">Back</button>
 	</div>
 </template>

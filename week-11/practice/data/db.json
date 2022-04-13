@@ -10,20 +10,20 @@
       }
     },
     {
-      "username": "lnwza007",
+      "username": "tong",
       "profile": {
         "nickname": "tong",
-        "age": "51",
-        "gender": "other"
+        "age": "20",
+        "gender": "male"
       },
       "id": 2
     },
     {
-      "username": "tantan",
+      "username": "tan",
       "profile": {
-        "nickname": "tan",
-        "age": "12",
-        "gender": "male"
+        "nickname": "tannii",
+        "age": "22",
+        "gender": "female"
       },
       "id": 3
     },

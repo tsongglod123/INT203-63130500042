@@ -9,7 +9,7 @@ const props = defineProps({
 		require: true,
 	},
 });
-const emits = defineEmits(["action"]);
+const emits = defineEmits(["function"]);
 </script>
 
 <template>
@@ -24,7 +24,7 @@ const emits = defineEmits(["action"]);
 	>
 		Please fill the form!
 	</div>
-	<button type="button" @click.left="$emit('action', { username, profile })">
+	<button type="button" @click.left="$emit('function', { username, profile })">
 		Register
 	</button>
 </template>

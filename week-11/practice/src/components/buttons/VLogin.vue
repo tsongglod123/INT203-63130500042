@@ -5,11 +5,11 @@ const props = defineProps({
 		require: true,
 	},
 });
-const emits = defineEmits(["action"]);
+const emits = defineEmits(["function"]);
 </script>
 
 <template>
-	<button type="button" @click.left="$emit('action', username)">Login</button>
+	<button type="button" @click.left="$emit('function', username)">Login</button>
 </template>
 
 <style scoped></style>

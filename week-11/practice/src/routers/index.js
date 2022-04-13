@@ -4,6 +4,7 @@ import VHome from "../views/VHome.vue";
 import VNotFound from "../views/VNotFound.vue";
 import VUsers from "../views/VUsers.vue";
 import VRegisterPage from "../views/VRegisterPage.vue";
+import VEditPage from "../views/VEditPage.vue";
 
 const history = createWebHistory();
 const routes = [
@@ -23,9 +24,14 @@ const routes = [
 		component: VNotFound,
 	},
 	{
-		path: "/users/:id",
+		path: "/users/:id/profile",
 		name: "user-profile",
 		component: VUsers,
+	},
+	{
+		path: "/users/:id/edit",
+		name: "edit-profile",
+		component: VEditPage,
 	},
 	{
 		path: "/register",
